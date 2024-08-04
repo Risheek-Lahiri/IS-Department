@@ -1,0 +1,55 @@
+.mobile-nav-overlay {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 1rem;
+  background: rgb(27, 33, 30);
+  background: linear-gradient(
+    132deg,
+    rgba(27, 33, 30, 0.5) 0%,
+    rgba(25, 37, 30, 0.6) 100%
+  );
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.125);
+  z-index: 1000;
+}
+
+.mobile-nav {
+  display: flex;
+  align-items: center;
+  margin: 1rem 2rem 2rem 2rem;
+  row-gap: 3rem;
+}
+
+.mobile-nav > ul {
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-nav > ul:nth-of-type(2) {
+  width: 6rem;
+  justify-content: flex-end;
+}
+
+button.active > svg {
+  stroke: rgb(164, 164, 164);
+}
+
+svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  stroke: rgb(120, 120, 120);
+}
+
+/* For screens less than 700px */
+@media only screen and (max-width: 700px) {
+  .mobile-nav-overlay {
+    display: block;
+  }
+
+  button {
+    text-transform: uppercase;
+  }
+}

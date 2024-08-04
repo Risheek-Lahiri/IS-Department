@@ -1,0 +1,87 @@
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 2rem 0 0 0;
+}
+
+nav {
+  position: relative;
+}
+
+nav > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  column-gap: 2rem;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  column-gap: 5rem;
+}
+
+.navigation-dialogue {
+  display: none;
+}
+
+.navigation > ul {
+  flex-direction: row;
+  column-gap: 2rem;
+}
+
+button {
+  height: 100%;
+  font-family: "Inter", sans-serif;
+  text-transform: capitalize;
+  letter-spacing: 1.6px;
+  font-size: 1.35rem;
+
+  color: rgb(120, 120, 120);
+  background: none;
+  border: none;
+}
+
+button.active {
+  color: rgb(164, 164, 164);
+}
+
+.sound_control {
+  position: relative;
+}
+
+.sound_control > svg {
+  display: block;
+  height: 1.7rem;
+  width: 1.7rem;
+  stroke: rgb(164, 164, 164);
+}
+
+.no-sound.sound_control::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: rotate(45deg) translate(0, -50%);
+  display: block;
+  height: 3px;
+  width: 110%;
+  background: rgb(164, 164, 164);
+}
+
+/* For screens less than 700px */
+@media only screen and (max-width: 700px) {
+  .navigation > ul {
+    display: none;
+  }
+}
