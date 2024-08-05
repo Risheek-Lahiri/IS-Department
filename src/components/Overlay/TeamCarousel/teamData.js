@@ -44,8 +44,7 @@ const teamData = [
     name: "Risheek Lahiri",
     image: "/images/r.jpg",
     links: [
-      {title: "linkedin",
-        link: "https://www.linkedin.com/in/risheeklahiri/"},
+      {title: "linkedin"},
       { title: "github", link: "https://github.com/Risheek-Lahiri" },
       { title: "twitter"},
       { title: "portfolio"},
