@@ -2,7 +2,7 @@
 const teamData = [
   {
     name: "Abhinash Deka",
-    image: "/images/cx.png",
+    image: "/images/deka.jpg",
     links: [
       { title: "linkedin"},
       { title: "github"},
