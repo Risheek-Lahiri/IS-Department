@@ -1,4 +1,4 @@
-// Run the command in terminal 
-npm install
-npm run dev
-Open in your local browser
+1.// Run the command in terminal 
+2.npm install
+3.npm run dev
+4.Open in your local browser
