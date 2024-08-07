@@ -1,4 +1,4 @@
-// Ruin the command
+// Run the command
 npm install
 npm run dev
 Open in your local browser
